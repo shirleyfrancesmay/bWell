@@ -1,0 +1,653 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4A0312831B40041C005A971E /* GreenTickView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0312821B40041C005A971E /* GreenTickView.swift */; };
+		4A15D52F1B40072C00C0A67B /* TodayHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A15D52E1B40072C00C0A67B /* TodayHomeViewController.swift */; };
+		4A15D5311B40079E00C0A67B /* TodayEditNoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A15D5301B40079E00C0A67B /* TodayEditNoteViewController.swift */; };
+		4A15D5331B4011CA00C0A67B /* TodaySessionOverviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A15D5321B4011CA00C0A67B /* TodaySessionOverviewViewController.swift */; };
+		4A15D5411B40304C00C0A67B /* SingleDay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A15D5401B40304C00C0A67B /* SingleDay.swift */; };
+		4A15D5431B40304D00C0A67B /* SingleExercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A15D5421B40304D00C0A67B /* SingleExercise.swift */; };
+		4A2CF7421B6A3EA2003F7913 /* ProgressDayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2CF7411B6A3EA2003F7913 /* ProgressDayViewController.swift */; };
+		4A2CF7441B6A5732003F7913 /* ProgressEditNoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2CF7431B6A5732003F7913 /* ProgressEditNoteViewController.swift */; };
+		4A62406B1B3F1820009B8904 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A62406A1B3F1820009B8904 /* AppDelegate.swift */; };
+		4A62406E1B3F1820009B8904 /* BCa.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4A62406C1B3F1820009B8904 /* BCa.xcdatamodeld */; };
+		4A6240731B3F1820009B8904 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A6240711B3F1820009B8904 /* Main.storyboard */; };
+		4A6240751B3F1820009B8904 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A6240741B3F1820009B8904 /* Images.xcassets */; };
+		4A6240781B3F1820009B8904 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A6240761B3F1820009B8904 /* LaunchScreen.xib */; };
+		4A6240941B3F1C89009B8904 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A6240931B3F1C89009B8904 /* Model.swift */; };
+		4A6240981B3F3D23009B8904 /* UserDefaultsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A6240971B3F3D23009B8904 /* UserDefaultsController.swift */; };
+		4A62409A1B3F4187009B8904 /* Stages.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4A6240991B3F4187009B8904 /* Stages.plist */; };
+		4A62409D1B3F4780009B8904 /* StagesData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A62409C1B3F4780009B8904 /* StagesData.swift */; };
+		4A63757E1B736ADC004127DF /* GraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A63757C1B736ADC004127DF /* GraphView.swift */; };
+		4A63757F1B736ADC004127DF /* ToggleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A63757D1B736ADC004127DF /* ToggleButton.swift */; };
+		4A6375811B736C89004127DF /* ProgressHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A6375801B736C89004127DF /* ProgressHomeViewController.swift */; };
+		4A6969481B73CC0F007F774F /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A6969471B73CC0F007F774F /* MainTabBarController.swift */; };
+		4A887DF51B43D9FD006CCA3F /* ProgressCalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A887DF41B43D9FD006CCA3F /* ProgressCalendarViewController.swift */; };
+		4A887DF71B43F8D0006CCA3F /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A887DF61B43F8D0006CCA3F /* CalendarView.swift */; };
+		4A9AB6A41B5D1D4E0077964D /* CalendarContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A9AB6A31B5D1D4E0077964D /* CalendarContentView.swift */; };
+		4AB05D7D1B7246AB00C827B2 /* PlayControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AB05D7C1B7246AB00C827B2 /* PlayControlView.swift */; };
+		4AB17B521B6BFC4600558436 /* SpringBackNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AB17B511B6BFC4600558436 /* SpringBackNavigationController.swift */; };
+		4AC4C26A1C047F16001D1C35 /* I-0.1 Hand squeeze.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 4AC4C2541C047F16001D1C35 /* I-0.1 Hand squeeze.m4v */; };
+		4AC4C26B1C047F16001D1C35 /* I-0.2 Shoulder roll.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 4AC4C2551C047F16001D1C35 /* I-0.2 Shoulder roll.m4v */; };
+		4AC4C26C1C047F16001D1C35 /* I-1.1 Assisted arm raise.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 4AC4C2561C047F16001D1C35 /* I-1.1 Assisted arm raise.m4v */; };
+		4AC4C26D1C047F16001D1C35 /* I-1.2 Assisted sideways arm raise.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 4AC4C2571C047F16001D1C35 /* I-1.2 Assisted sideways arm raise.m4v */; };
+		4AC4C26E1C047F16001D1C35 /* I-1.3 Arm swing.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 4AC4C2581C047F16001D1C35 /* I-1.3 Arm swing.m4v */; };
+		4AC4C26F1C047F16001D1C35 /* I-1.4 Assisted arms lift.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 4AC4C2591C047F16001D1C35 /* I-1.4 Assisted arms lift.m4v */; };
+		4AC4C2711C047F16001D1C35 /* I-1.5 Backhand raise.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 4AC4C25B1C047F16001D1C35 /* I-1.5 Backhand raise.m4v */; };
+		4AC4C2721C047F16001D1C35 /* I-1.6 External shoulder rotation.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 4AC4C25C1C047F16001D1C35 /* I-1.6 External shoulder rotation.m4v */; };
+		4AC4C2731C047F16001D1C35 /* I-2.1 Elbow drop.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 4AC4C25D1C047F16001D1C35 /* I-2.1 Elbow drop.m4v */; };
+		4AC4C2741C047F16001D1C35 /* I-2.2 Snow angel.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 4AC4C25E1C047F16001D1C35 /* I-2.2 Snow angel.m4v */; };
+		4AC4C2751C047F16001D1C35 /* I-2.3 Standing arm raise.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 4AC4C25F1C047F16001D1C35 /* I-2.3 Standing arm raise.m4v */; };
+		4AC4C2761C047F16001D1C35 /* I-2.4 Towel stretch.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 4AC4C2601C047F16001D1C35 /* I-2.4 Towel stretch.m4v */; };
+		4AC4C2781C047F16001D1C35 /* I-3.1 Above arm rasie with weights.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 4AC4C2621C047F16001D1C35 /* I-3.1 Above arm rasie with weights.m4v */; };
+		4AC4C2791C047F16001D1C35 /* I-3.2 Diagonal outward shoulder raise.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 4AC4C2631C047F16001D1C35 /* I-3.2 Diagonal outward shoulder raise.m4v */; };
+		4AC4C27A1C047F16001D1C35 /* I-3.3 Arm openings in side lying.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 4AC4C2641C047F16001D1C35 /* I-3.3 Arm openings in side lying.m4v */; };
+		4AC4C27B1C047F16001D1C35 /* I-3.4 Hands and knees arm lift.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 4AC4C2651C047F16001D1C35 /* I-3.4 Hands and knees arm lift.m4v */; };
+		4AC4C27C1C047F16001D1C35 /* I-3.5 Theading the needle.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 4AC4C2661C047F16001D1C35 /* I-3.5 Theading the needle.m4v */; };
+		4AC4C27D1C047F16001D1C35 /* S1.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 4AC4C2671C047F16001D1C35 /* S1.m4v */; };
+		4AC4C27E1C047F16001D1C35 /* S2.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 4AC4C2681C047F16001D1C35 /* S2.m4v */; };
+		4AC4C27F1C047F16001D1C35 /* S3.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 4AC4C2691C047F16001D1C35 /* S3.m4v */; };
+		4AC4C2861C048392001D1C35 /* 1.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 4AC4C2801C048392001D1C35 /* 1.rtf */; };
+		4AC4C2871C048392001D1C35 /* 2.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 4AC4C2811C048392001D1C35 /* 2.rtf */; };
+		4AC4C2881C048392001D1C35 /* 3.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 4AC4C2821C048392001D1C35 /* 3.rtf */; };
+		4AC4C2891C048392001D1C35 /* 4.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 4AC4C2831C048392001D1C35 /* 4.rtf */; };
+		4AC4C28A1C048392001D1C35 /* 5.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 4AC4C2841C048392001D1C35 /* 5.rtf */; };
+		4AC4C28B1C048392001D1C35 /* 6.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 4AC4C2851C048392001D1C35 /* 6.rtf */; };
+		4AD2CAB81C11B2CA00836B40 /* bigAppIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AD2CAB71C11B2CA00836B40 /* bigAppIcon.png */; };
+		4AD2CABA1C11CE2A00836B40 /* bigAppIcon2.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AD2CAB91C11CE2A00836B40 /* bigAppIcon2.png */; };
+		4AE8A0FC1C046CCC00147ECF /* FirstViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE8A0FB1C046CCC00147ECF /* FirstViewViewController.swift */; };
+		4AFAAED81B41976E004DB252 /* SingleSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AFAAED71B41976E004DB252 /* SingleSession.swift */; };
+		4AFAAEDA1B41A1E6004DB252 /* DayViewHelperController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AFAAED91B41A1E6004DB252 /* DayViewHelperController.swift */; };
+		4AFAAEDC1B42E398004DB252 /* TodayStageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AFAAEDB1B42E398004DB252 /* TodayStageViewController.swift */; };
+		4AFB21FA1BFB33240070B29A /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AFB21F91BFB33240070B29A /* AVFoundation.framework */; };
+		4AFB21FC1BFB332A0070B29A /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AFB21FB1BFB332A0070B29A /* AVKit.framework */; };
+		4AFB21FE1BFB448C0070B29A /* MoreInfoHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AFB21FD1BFB448C0070B29A /* MoreInfoHomeViewController.swift */; };
+		4AFB22001BFB51020070B29A /* MoreInfoStageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AFB21FF1BFB51020070B29A /* MoreInfoStageViewController.swift */; };
+		4AFB22021BFB660C0070B29A /* MoreInfoExerciseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AFB22011BFB660C0070B29A /* MoreInfoExerciseViewController.swift */; };
+		4AFB222A1BFDCC140070B29A /* LandscapeAVPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AFB22291BFDCC140070B29A /* LandscapeAVPlayerViewController.swift */; };
+		4AFB222C1BFF212F0070B29A /* LocalNotifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AFB222B1BFF212F0070B29A /* LocalNotifications.swift */; };
+		4AFCD8AE1C076D6100B3F227 /* RemindersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AFCD8AD1C076D6100B3F227 /* RemindersTableViewController.swift */; };
+		4AFCD8B01C076DAA00B3F227 /* ReminderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AFCD8AF1C076DAA00B3F227 /* ReminderTableViewCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4A0312821B40041C005A971E /* GreenTickView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GreenTickView.swift; sourceTree = "<group>"; };
+		4A15D52E1B40072C00C0A67B /* TodayHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodayHomeViewController.swift; sourceTree = "<group>"; };
+		4A15D5301B40079E00C0A67B /* TodayEditNoteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodayEditNoteViewController.swift; sourceTree = "<group>"; };
+		4A15D5321B4011CA00C0A67B /* TodaySessionOverviewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodaySessionOverviewViewController.swift; sourceTree = "<group>"; };
+		4A15D5401B40304C00C0A67B /* SingleDay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SingleDay.swift; sourceTree = "<group>"; };
+		4A15D5421B40304D00C0A67B /* SingleExercise.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SingleExercise.swift; sourceTree = "<group>"; };
+		4A2CF7411B6A3EA2003F7913 /* ProgressDayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressDayViewController.swift; sourceTree = "<group>"; };
+		4A2CF7431B6A5732003F7913 /* ProgressEditNoteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressEditNoteViewController.swift; sourceTree = "<group>"; };
+		4A6240651B3F1820009B8904 /* bWell.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = bWell.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A6240691B3F1820009B8904 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4A62406A1B3F1820009B8904 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4A62406D1B3F1820009B8904 /* BCa.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BCa.xcdatamodel; sourceTree = "<group>"; };
+		4A6240721B3F1820009B8904 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4A6240741B3F1820009B8904 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		4A6240771B3F1820009B8904 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		4A6240821B3F1820009B8904 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4A6240831B3F1820009B8904 /* BCaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BCaTests.swift; sourceTree = "<group>"; };
+		4A6240931B3F1C89009B8904 /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		4A6240971B3F3D23009B8904 /* UserDefaultsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaultsController.swift; sourceTree = "<group>"; };
+		4A6240991B3F4187009B8904 /* Stages.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Stages.plist; sourceTree = "<group>"; };
+		4A62409C1B3F4780009B8904 /* StagesData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StagesData.swift; sourceTree = "<group>"; };
+		4A63757C1B736ADC004127DF /* GraphView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraphView.swift; sourceTree = "<group>"; };
+		4A63757D1B736ADC004127DF /* ToggleButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToggleButton.swift; sourceTree = "<group>"; };
+		4A6375801B736C89004127DF /* ProgressHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressHomeViewController.swift; sourceTree = "<group>"; };
+		4A6969471B73CC0F007F774F /* MainTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		4A887DF41B43D9FD006CCA3F /* ProgressCalendarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressCalendarViewController.swift; sourceTree = "<group>"; };
+		4A887DF61B43F8D0006CCA3F /* CalendarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
+		4A9AB6A31B5D1D4E0077964D /* CalendarContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarContentView.swift; sourceTree = "<group>"; };
+		4AB05D7C1B7246AB00C827B2 /* PlayControlView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayControlView.swift; sourceTree = "<group>"; };
+		4AB17B511B6BFC4600558436 /* SpringBackNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpringBackNavigationController.swift; sourceTree = "<group>"; };
+		4AC4C2541C047F16001D1C35 /* I-0.1 Hand squeeze.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; name = "I-0.1 Hand squeeze.m4v"; path = "videoResources/I-0.1 Hand squeeze.m4v"; sourceTree = "<group>"; };
+		4AC4C2551C047F16001D1C35 /* I-0.2 Shoulder roll.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; name = "I-0.2 Shoulder roll.m4v"; path = "videoResources/I-0.2 Shoulder roll.m4v"; sourceTree = "<group>"; };
+		4AC4C2561C047F16001D1C35 /* I-1.1 Assisted arm raise.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; name = "I-1.1 Assisted arm raise.m4v"; path = "videoResources/I-1.1 Assisted arm raise.m4v"; sourceTree = "<group>"; };
+		4AC4C2571C047F16001D1C35 /* I-1.2 Assisted sideways arm raise.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; name = "I-1.2 Assisted sideways arm raise.m4v"; path = "videoResources/I-1.2 Assisted sideways arm raise.m4v"; sourceTree = "<group>"; };
+		4AC4C2581C047F16001D1C35 /* I-1.3 Arm swing.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; name = "I-1.3 Arm swing.m4v"; path = "videoResources/I-1.3 Arm swing.m4v"; sourceTree = "<group>"; };
+		4AC4C2591C047F16001D1C35 /* I-1.4 Assisted arms lift.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; name = "I-1.4 Assisted arms lift.m4v"; path = "videoResources/I-1.4 Assisted arms lift.m4v"; sourceTree = "<group>"; };
+		4AC4C25B1C047F16001D1C35 /* I-1.5 Backhand raise.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; name = "I-1.5 Backhand raise.m4v"; path = "videoResources/I-1.5 Backhand raise.m4v"; sourceTree = "<group>"; };
+		4AC4C25C1C047F16001D1C35 /* I-1.6 External shoulder rotation.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; name = "I-1.6 External shoulder rotation.m4v"; path = "videoResources/I-1.6 External shoulder rotation.m4v"; sourceTree = "<group>"; };
+		4AC4C25D1C047F16001D1C35 /* I-2.1 Elbow drop.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; name = "I-2.1 Elbow drop.m4v"; path = "videoResources/I-2.1 Elbow drop.m4v"; sourceTree = "<group>"; };
+		4AC4C25E1C047F16001D1C35 /* I-2.2 Snow angel.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; name = "I-2.2 Snow angel.m4v"; path = "videoResources/I-2.2 Snow angel.m4v"; sourceTree = "<group>"; };
+		4AC4C25F1C047F16001D1C35 /* I-2.3 Standing arm raise.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; name = "I-2.3 Standing arm raise.m4v"; path = "videoResources/I-2.3 Standing arm raise.m4v"; sourceTree = "<group>"; };
+		4AC4C2601C047F16001D1C35 /* I-2.4 Towel stretch.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; name = "I-2.4 Towel stretch.m4v"; path = "videoResources/I-2.4 Towel stretch.m4v"; sourceTree = "<group>"; };
+		4AC4C2621C047F16001D1C35 /* I-3.1 Above arm rasie with weights.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; name = "I-3.1 Above arm rasie with weights.m4v"; path = "videoResources/I-3.1 Above arm rasie with weights.m4v"; sourceTree = "<group>"; };
+		4AC4C2631C047F16001D1C35 /* I-3.2 Diagonal outward shoulder raise.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; name = "I-3.2 Diagonal outward shoulder raise.m4v"; path = "videoResources/I-3.2 Diagonal outward shoulder raise.m4v"; sourceTree = "<group>"; };
+		4AC4C2641C047F16001D1C35 /* I-3.3 Arm openings in side lying.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; name = "I-3.3 Arm openings in side lying.m4v"; path = "videoResources/I-3.3 Arm openings in side lying.m4v"; sourceTree = "<group>"; };
+		4AC4C2651C047F16001D1C35 /* I-3.4 Hands and knees arm lift.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; name = "I-3.4 Hands and knees arm lift.m4v"; path = "videoResources/I-3.4 Hands and knees arm lift.m4v"; sourceTree = "<group>"; };
+		4AC4C2661C047F16001D1C35 /* I-3.5 Theading the needle.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; name = "I-3.5 Theading the needle.m4v"; path = "videoResources/I-3.5 Theading the needle.m4v"; sourceTree = "<group>"; };
+		4AC4C2671C047F16001D1C35 /* S1.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; name = S1.m4v; path = videoResources/S1.m4v; sourceTree = "<group>"; };
+		4AC4C2681C047F16001D1C35 /* S2.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; name = S2.m4v; path = videoResources/S2.m4v; sourceTree = "<group>"; };
+		4AC4C2691C047F16001D1C35 /* S3.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; name = S3.m4v; path = videoResources/S3.m4v; sourceTree = "<group>"; };
+		4AC4C2801C048392001D1C35 /* 1.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; name = 1.rtf; path = text/1.rtf; sourceTree = "<group>"; };
+		4AC4C2811C048392001D1C35 /* 2.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; name = 2.rtf; path = text/2.rtf; sourceTree = "<group>"; };
+		4AC4C2821C048392001D1C35 /* 3.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; name = 3.rtf; path = text/3.rtf; sourceTree = "<group>"; };
+		4AC4C2831C048392001D1C35 /* 4.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; name = 4.rtf; path = text/4.rtf; sourceTree = "<group>"; };
+		4AC4C2841C048392001D1C35 /* 5.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; name = 5.rtf; path = text/5.rtf; sourceTree = "<group>"; };
+		4AC4C2851C048392001D1C35 /* 6.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; name = 6.rtf; path = text/6.rtf; sourceTree = "<group>"; };
+		4AD2CAB71C11B2CA00836B40 /* bigAppIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bigAppIcon.png; path = "icon assets/square/bigAppIcon.png"; sourceTree = SOURCE_ROOT; };
+		4AD2CAB91C11CE2A00836B40 /* bigAppIcon2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bigAppIcon2.png; path = "icon assets/square/bigAppIcon2.png"; sourceTree = SOURCE_ROOT; };
+		4AE8A0FB1C046CCC00147ECF /* FirstViewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstViewViewController.swift; sourceTree = "<group>"; };
+		4AFAAED71B41976E004DB252 /* SingleSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SingleSession.swift; sourceTree = "<group>"; };
+		4AFAAED91B41A1E6004DB252 /* DayViewHelperController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DayViewHelperController.swift; sourceTree = "<group>"; };
+		4AFAAEDB1B42E398004DB252 /* TodayStageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodayStageViewController.swift; sourceTree = "<group>"; };
+		4AFB21F91BFB33240070B29A /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		4AFB21FB1BFB332A0070B29A /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
+		4AFB21FD1BFB448C0070B29A /* MoreInfoHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoreInfoHomeViewController.swift; sourceTree = "<group>"; };
+		4AFB21FF1BFB51020070B29A /* MoreInfoStageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoreInfoStageViewController.swift; sourceTree = "<group>"; };
+		4AFB22011BFB660C0070B29A /* MoreInfoExerciseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoreInfoExerciseViewController.swift; sourceTree = "<group>"; };
+		4AFB22291BFDCC140070B29A /* LandscapeAVPlayerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LandscapeAVPlayerViewController.swift; sourceTree = "<group>"; };
+		4AFB222B1BFF212F0070B29A /* LocalNotifications.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalNotifications.swift; sourceTree = "<group>"; };
+		4AFB222D1BFF70950070B29A /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; };
+		4AFCD8AD1C076D6100B3F227 /* RemindersTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemindersTableViewController.swift; sourceTree = "<group>"; };
+		4AFCD8AF1C076DAA00B3F227 /* ReminderTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReminderTableViewCell.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4A6240621B3F1820009B8904 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4AFB21FC1BFB332A0070B29A /* AVKit.framework in Frameworks */,
+				4AFB21FA1BFB33240070B29A /* AVFoundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4A0312841B40042D005A971E /* Custom UI Elements */ = {
+			isa = PBXGroup;
+			children = (
+				4A63757C1B736ADC004127DF /* GraphView.swift */,
+				4A63757D1B736ADC004127DF /* ToggleButton.swift */,
+				4A887DF61B43F8D0006CCA3F /* CalendarView.swift */,
+				4A9AB6A31B5D1D4E0077964D /* CalendarContentView.swift */,
+				4A0312821B40041C005A971E /* GreenTickView.swift */,
+				4AB05D7C1B7246AB00C827B2 /* PlayControlView.swift */,
+				4AFCD8AF1C076DAA00B3F227 /* ReminderTableViewCell.swift */,
+			);
+			name = "Custom UI Elements";
+			sourceTree = "<group>";
+		};
+		4A62405C1B3F1820009B8904 = {
+			isa = PBXGroup;
+			children = (
+				4AFB21FB1BFB332A0070B29A /* AVKit.framework */,
+				4AFB21F91BFB33240070B29A /* AVFoundation.framework */,
+				4A6240671B3F1820009B8904 /* BCa */,
+				4A6240801B3F1820009B8904 /* BCaTests */,
+				4A6240661B3F1820009B8904 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4A6240661B3F1820009B8904 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4A6240651B3F1820009B8904 /* bWell.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4A6240671B3F1820009B8904 /* BCa */ = {
+			isa = PBXGroup;
+			children = (
+				4AAF0CEA1C03700D003FA69A /* Text */,
+				4AFB21F81BFB31170070B29A /* Video */,
+				4A62409B1B3F471E009B8904 /* CoreData */,
+				4A62409F1B3FF43D009B8904 /* Model and Data */,
+				4A62409E1B3FF42F009B8904 /* View controllers */,
+				4A62406A1B3F1820009B8904 /* AppDelegate.swift */,
+				4AFB222D1BFF70950070B29A /* MyPlayground.playground */,
+				4A0312841B40042D005A971E /* Custom UI Elements */,
+				4A6240991B3F4187009B8904 /* Stages.plist */,
+				4A6240711B3F1820009B8904 /* Main.storyboard */,
+				4AD2CAB71C11B2CA00836B40 /* bigAppIcon.png */,
+				4A6240741B3F1820009B8904 /* Images.xcassets */,
+				4A6240761B3F1820009B8904 /* LaunchScreen.xib */,
+				4AD2CAB91C11CE2A00836B40 /* bigAppIcon2.png */,
+				4A62406C1B3F1820009B8904 /* BCa.xcdatamodeld */,
+				4A6240681B3F1820009B8904 /* Supporting Files */,
+			);
+			path = BCa;
+			sourceTree = "<group>";
+		};
+		4A6240681B3F1820009B8904 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4A6240691B3F1820009B8904 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4A6240801B3F1820009B8904 /* BCaTests */ = {
+			isa = PBXGroup;
+			children = (
+				4A6240831B3F1820009B8904 /* BCaTests.swift */,
+				4A6240811B3F1820009B8904 /* Supporting Files */,
+			);
+			path = BCaTests;
+			sourceTree = "<group>";
+		};
+		4A6240811B3F1820009B8904 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4A6240821B3F1820009B8904 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4A62409B1B3F471E009B8904 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				4AFAAED71B41976E004DB252 /* SingleSession.swift */,
+				4A15D5421B40304D00C0A67B /* SingleExercise.swift */,
+				4A15D5401B40304C00C0A67B /* SingleDay.swift */,
+			);
+			name = CoreData;
+			sourceTree = "<group>";
+		};
+		4A62409E1B3FF42F009B8904 /* View controllers */ = {
+			isa = PBXGroup;
+			children = (
+				4A6969471B73CC0F007F774F /* MainTabBarController.swift */,
+				4AE8A0FB1C046CCC00147ECF /* FirstViewViewController.swift */,
+				4AFAAED91B41A1E6004DB252 /* DayViewHelperController.swift */,
+				4A15D52E1B40072C00C0A67B /* TodayHomeViewController.swift */,
+				4A15D5301B40079E00C0A67B /* TodayEditNoteViewController.swift */,
+				4A15D5321B4011CA00C0A67B /* TodaySessionOverviewViewController.swift */,
+				4AFAAEDB1B42E398004DB252 /* TodayStageViewController.swift */,
+				4A6375801B736C89004127DF /* ProgressHomeViewController.swift */,
+				4A887DF41B43D9FD006CCA3F /* ProgressCalendarViewController.swift */,
+				4A2CF7411B6A3EA2003F7913 /* ProgressDayViewController.swift */,
+				4A2CF7431B6A5732003F7913 /* ProgressEditNoteViewController.swift */,
+				4AB17B511B6BFC4600558436 /* SpringBackNavigationController.swift */,
+				4AFB21FD1BFB448C0070B29A /* MoreInfoHomeViewController.swift */,
+				4AFB21FF1BFB51020070B29A /* MoreInfoStageViewController.swift */,
+				4AFB22011BFB660C0070B29A /* MoreInfoExerciseViewController.swift */,
+				4AFB22291BFDCC140070B29A /* LandscapeAVPlayerViewController.swift */,
+				4AFCD8AD1C076D6100B3F227 /* RemindersTableViewController.swift */,
+			);
+			name = "View controllers";
+			sourceTree = "<group>";
+		};
+		4A62409F1B3FF43D009B8904 /* Model and Data */ = {
+			isa = PBXGroup;
+			children = (
+				4A6240931B3F1C89009B8904 /* Model.swift */,
+				4A62409C1B3F4780009B8904 /* StagesData.swift */,
+				4A6240971B3F3D23009B8904 /* UserDefaultsController.swift */,
+				4AFB222B1BFF212F0070B29A /* LocalNotifications.swift */,
+			);
+			name = "Model and Data";
+			sourceTree = "<group>";
+		};
+		4AAF0CEA1C03700D003FA69A /* Text */ = {
+			isa = PBXGroup;
+			children = (
+				4AC4C2801C048392001D1C35 /* 1.rtf */,
+				4AC4C2811C048392001D1C35 /* 2.rtf */,
+				4AC4C2821C048392001D1C35 /* 3.rtf */,
+				4AC4C2831C048392001D1C35 /* 4.rtf */,
+				4AC4C2841C048392001D1C35 /* 5.rtf */,
+				4AC4C2851C048392001D1C35 /* 6.rtf */,
+			);
+			name = Text;
+			sourceTree = "<group>";
+		};
+		4AFB21F81BFB31170070B29A /* Video */ = {
+			isa = PBXGroup;
+			children = (
+				4AC4C2541C047F16001D1C35 /* I-0.1 Hand squeeze.m4v */,
+				4AC4C2551C047F16001D1C35 /* I-0.2 Shoulder roll.m4v */,
+				4AC4C2561C047F16001D1C35 /* I-1.1 Assisted arm raise.m4v */,
+				4AC4C2571C047F16001D1C35 /* I-1.2 Assisted sideways arm raise.m4v */,
+				4AC4C2581C047F16001D1C35 /* I-1.3 Arm swing.m4v */,
+				4AC4C2591C047F16001D1C35 /* I-1.4 Assisted arms lift.m4v */,
+				4AC4C25B1C047F16001D1C35 /* I-1.5 Backhand raise.m4v */,
+				4AC4C25C1C047F16001D1C35 /* I-1.6 External shoulder rotation.m4v */,
+				4AC4C25D1C047F16001D1C35 /* I-2.1 Elbow drop.m4v */,
+				4AC4C25E1C047F16001D1C35 /* I-2.2 Snow angel.m4v */,
+				4AC4C25F1C047F16001D1C35 /* I-2.3 Standing arm raise.m4v */,
+				4AC4C2601C047F16001D1C35 /* I-2.4 Towel stretch.m4v */,
+				4AC4C2621C047F16001D1C35 /* I-3.1 Above arm rasie with weights.m4v */,
+				4AC4C2631C047F16001D1C35 /* I-3.2 Diagonal outward shoulder raise.m4v */,
+				4AC4C2641C047F16001D1C35 /* I-3.3 Arm openings in side lying.m4v */,
+				4AC4C2651C047F16001D1C35 /* I-3.4 Hands and knees arm lift.m4v */,
+				4AC4C2661C047F16001D1C35 /* I-3.5 Theading the needle.m4v */,
+				4AC4C2671C047F16001D1C35 /* S1.m4v */,
+				4AC4C2681C047F16001D1C35 /* S2.m4v */,
+				4AC4C2691C047F16001D1C35 /* S3.m4v */,
+			);
+			name = Video;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4A6240641B3F1820009B8904 /* bWell */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4A6240871B3F1820009B8904 /* Build configuration list for PBXNativeTarget "bWell" */;
+			buildPhases = (
+				4A6240611B3F1820009B8904 /* Sources */,
+				4A6240621B3F1820009B8904 /* Frameworks */,
+				4A6240631B3F1820009B8904 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = bWell;
+			productName = BCa;
+			productReference = 4A6240651B3F1820009B8904 /* bWell.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4A62405D1B3F1820009B8904 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftMigration = 0700;
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = WattenEarth;
+				TargetAttributes = {
+					4A6240641B3F1820009B8904 = {
+						CreatedOnToolsVersion = 6.3.2;
+						DevelopmentTeam = CWMHWLMFY7;
+						LastSwiftMigration = 0830;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 4A6240601B3F1820009B8904 /* Build configuration list for PBXProject "BCa" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4A62405C1B3F1820009B8904;
+			productRefGroup = 4A6240661B3F1820009B8904 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4A6240641B3F1820009B8904 /* bWell */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4A6240631B3F1820009B8904 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4AC4C28A1C048392001D1C35 /* 5.rtf in Resources */,
+				4AC4C27E1C047F16001D1C35 /* S2.m4v in Resources */,
+				4AC4C2761C047F16001D1C35 /* I-2.4 Towel stretch.m4v in Resources */,
+				4AC4C2731C047F16001D1C35 /* I-2.1 Elbow drop.m4v in Resources */,
+				4AC4C26E1C047F16001D1C35 /* I-1.3 Arm swing.m4v in Resources */,
+				4AC4C26B1C047F16001D1C35 /* I-0.2 Shoulder roll.m4v in Resources */,
+				4AC4C2871C048392001D1C35 /* 2.rtf in Resources */,
+				4AC4C27F1C047F16001D1C35 /* S3.m4v in Resources */,
+				4AC4C2861C048392001D1C35 /* 1.rtf in Resources */,
+				4AC4C26A1C047F16001D1C35 /* I-0.1 Hand squeeze.m4v in Resources */,
+				4AD2CAB81C11B2CA00836B40 /* bigAppIcon.png in Resources */,
+				4AC4C2711C047F16001D1C35 /* I-1.5 Backhand raise.m4v in Resources */,
+				4AC4C2881C048392001D1C35 /* 3.rtf in Resources */,
+				4AC4C26C1C047F16001D1C35 /* I-1.1 Assisted arm raise.m4v in Resources */,
+				4A6240731B3F1820009B8904 /* Main.storyboard in Resources */,
+				4AC4C26F1C047F16001D1C35 /* I-1.4 Assisted arms lift.m4v in Resources */,
+				4AD2CABA1C11CE2A00836B40 /* bigAppIcon2.png in Resources */,
+				4A62409A1B3F4187009B8904 /* Stages.plist in Resources */,
+				4AC4C2891C048392001D1C35 /* 4.rtf in Resources */,
+				4AC4C2791C047F16001D1C35 /* I-3.2 Diagonal outward shoulder raise.m4v in Resources */,
+				4AC4C27A1C047F16001D1C35 /* I-3.3 Arm openings in side lying.m4v in Resources */,
+				4AC4C26D1C047F16001D1C35 /* I-1.2 Assisted sideways arm raise.m4v in Resources */,
+				4AC4C28B1C048392001D1C35 /* 6.rtf in Resources */,
+				4AC4C27D1C047F16001D1C35 /* S1.m4v in Resources */,
+				4AC4C2721C047F16001D1C35 /* I-1.6 External shoulder rotation.m4v in Resources */,
+				4AC4C27C1C047F16001D1C35 /* I-3.5 Theading the needle.m4v in Resources */,
+				4AC4C2751C047F16001D1C35 /* I-2.3 Standing arm raise.m4v in Resources */,
+				4AC4C2781C047F16001D1C35 /* I-3.1 Above arm rasie with weights.m4v in Resources */,
+				4A6240781B3F1820009B8904 /* LaunchScreen.xib in Resources */,
+				4A6240751B3F1820009B8904 /* Images.xcassets in Resources */,
+				4AC4C2741C047F16001D1C35 /* I-2.2 Snow angel.m4v in Resources */,
+				4AC4C27B1C047F16001D1C35 /* I-3.4 Hands and knees arm lift.m4v in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4A6240611B3F1820009B8904 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A6375811B736C89004127DF /* ProgressHomeViewController.swift in Sources */,
+				4AFCD8AE1C076D6100B3F227 /* RemindersTableViewController.swift in Sources */,
+				4AFB22021BFB660C0070B29A /* MoreInfoExerciseViewController.swift in Sources */,
+				4AFAAED81B41976E004DB252 /* SingleSession.swift in Sources */,
+				4A6969481B73CC0F007F774F /* MainTabBarController.swift in Sources */,
+				4A6240941B3F1C89009B8904 /* Model.swift in Sources */,
+				4A887DF71B43F8D0006CCA3F /* CalendarView.swift in Sources */,
+				4AE8A0FC1C046CCC00147ECF /* FirstViewViewController.swift in Sources */,
+				4A63757F1B736ADC004127DF /* ToggleButton.swift in Sources */,
+				4A63757E1B736ADC004127DF /* GraphView.swift in Sources */,
+				4AB17B521B6BFC4600558436 /* SpringBackNavigationController.swift in Sources */,
+				4A15D5331B4011CA00C0A67B /* TodaySessionOverviewViewController.swift in Sources */,
+				4A6240981B3F3D23009B8904 /* UserDefaultsController.swift in Sources */,
+				4A15D52F1B40072C00C0A67B /* TodayHomeViewController.swift in Sources */,
+				4AFAAEDC1B42E398004DB252 /* TodayStageViewController.swift in Sources */,
+				4A15D5431B40304D00C0A67B /* SingleExercise.swift in Sources */,
+				4A887DF51B43D9FD006CCA3F /* ProgressCalendarViewController.swift in Sources */,
+				4A15D5411B40304C00C0A67B /* SingleDay.swift in Sources */,
+				4A62409D1B3F4780009B8904 /* StagesData.swift in Sources */,
+				4A9AB6A41B5D1D4E0077964D /* CalendarContentView.swift in Sources */,
+				4AFB222C1BFF212F0070B29A /* LocalNotifications.swift in Sources */,
+				4AB05D7D1B7246AB00C827B2 /* PlayControlView.swift in Sources */,
+				4A15D5311B40079E00C0A67B /* TodayEditNoteViewController.swift in Sources */,
+				4A0312831B40041C005A971E /* GreenTickView.swift in Sources */,
+				4A2CF7441B6A5732003F7913 /* ProgressEditNoteViewController.swift in Sources */,
+				4A2CF7421B6A3EA2003F7913 /* ProgressDayViewController.swift in Sources */,
+				4AFB22001BFB51020070B29A /* MoreInfoStageViewController.swift in Sources */,
+				4AFB21FE1BFB448C0070B29A /* MoreInfoHomeViewController.swift in Sources */,
+				4AFCD8B01C076DAA00B3F227 /* ReminderTableViewCell.swift in Sources */,
+				4AFAAEDA1B41A1E6004DB252 /* DayViewHelperController.swift in Sources */,
+				4AFB222A1BFDCC140070B29A /* LandscapeAVPlayerViewController.swift in Sources */,
+				4A62406E1B3F1820009B8904 /* BCa.xcdatamodeld in Sources */,
+				4A62406B1B3F1820009B8904 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		4A6240711B3F1820009B8904 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4A6240721B3F1820009B8904 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4A6240761B3F1820009B8904 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4A6240771B3F1820009B8904 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4A6240851B3F1820009B8904 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 2.3;
+			};
+			name = Debug;
+		};
+		4A6240861B3F1820009B8904 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 2.3;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4A6240881B3F1820009B8904 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CWMHWLMFY7;
+				INFOPLIST_FILE = BCa/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.wattenearth.shore-c.bWell";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		4A6240891B3F1820009B8904 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CWMHWLMFY7;
+				INFOPLIST_FILE = BCa/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.wattenearth.shore-c.bWell";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4A6240601B3F1820009B8904 /* Build configuration list for PBXProject "BCa" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4A6240851B3F1820009B8904 /* Debug */,
+				4A6240861B3F1820009B8904 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4A6240871B3F1820009B8904 /* Build configuration list for PBXNativeTarget "bWell" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4A6240881B3F1820009B8904 /* Debug */,
+				4A6240891B3F1820009B8904 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		4A62406C1B3F1820009B8904 /* BCa.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				4A62406D1B3F1820009B8904 /* BCa.xcdatamodel */,
+			);
+			currentVersion = 4A62406D1B3F1820009B8904 /* BCa.xcdatamodel */;
+			path = BCa.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 4A62405D1B3F1820009B8904 /* Project object */;
+}
